@@ -36,6 +36,8 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
          * to revert all files from staging are to working directory
       * git commit -m "Type your commit comment here!"
          * to commit the files to local storage (! you have to push to save the changes to server)
+      * git diff
+         * to see all changes made to the files or code
    * lets clone the other repos and start working on them
       * git clone url_or_fileaddress location_you_to_on_our_system
          * eg git clone git@github.com:LaxminarayanaV7416/webDevelopment.git . ==> . means to pwd directory
@@ -43,4 +45,26 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
          * to pull the origin master of the repository
       * git push origin master
          * to push the code to the repository (Woooo now u can see the changes in github)
-   
+      #### Now lets start working with the branches aspect as we are till now working on master
+      * git branch
+         * to see what all branches are there and green and astricks highlithed indicates the we are on that branch
+      * git branch branchname
+         * this function creates the branch of the master now we can work on this branch and we can commit to master later on
+      * git checkout branchname
+         * to the working from one branch to branchname we can use checkout to checkout that branch
+      * git push -u branchname
+         * to basically merge the local and remote repo's branch use the above command and it will push it to remote repo later we can use the 
+      * git push branchname
+         * to push the branchname to remote repo
+      * git pull -u branchname / git pull branchname
+         * same as abover explanation
+      * git branch -a 
+         * to see all sort of branches with proper explanation
+      * git checkout master
+         * to checkout the local master branch, pull the master branch and now follow next step
+      * git branch --merged 
+         * to see what branches are merged together, as we follow steps we didnt merge the branchname to master we cannot see the branchname branch in the output.
+      * git merge branchname
+         * now we have merged the branchname with master, perform above code(git branch --merged) again to see what all merged with branch.
+      * git push origin master
+         * pushes the code merged branch to remote repo.
