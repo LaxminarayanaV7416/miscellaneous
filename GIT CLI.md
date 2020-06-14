@@ -94,4 +94,20 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
       * show the reference of log of commits with comments serially.
    * git checkout newhash
       * if we want to go ahead of new version if we are in older version
-   
+   * git revert hash_number_usually_seven_characters.
+      * to revert the old hash number without changing history.
+   * git diff hash_one hash_two
+      * to compare two files 
+   * git stash save "write your comment here!"
+      * stashing is like saving them in memory but our repo stays unedited like it was after pull.
+   * git stash list
+      * to see the list of stashed we saved.
+   * git stash apply stashcode_you_have_to_use
+      * to apply those saved changes to our repository
+   * git stash pop
+      * to apply the latest saved stash to the repo
+   * git stash drop stash_code
+      * to delete the saved stash from stash list
+   * git stash clear
+      * NOTE : to delete all the saved stashes from list
+      
