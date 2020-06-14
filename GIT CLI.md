@@ -1,13 +1,12 @@
 ### Lets see how to work with git from command line
-```Python
-# --- Command to install git in Ubuntu --- #
-# $ sudo apt-get install git
-# $ git --version ==> to check the version of github
-# $ git <verb> --help
-# (or)
-# $ git help <verb>
-# eg. git config --help (or) git help config
-```
+ --- Command to install git in Ubuntu ---
+* $ sudo apt-get install git
+* $ git --version ==> to check the version of github
+* $ git <verb> --help
+ (or)
+* $ git help <verb>
+* eg. git config --help (or) git help config
+   
 #### Lets see all the commands useful in git
 for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 "its pro git book")
 * lets see how to add git user name and git user email in config
@@ -70,3 +69,29 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
          * pushes the code merged branch to remote repo.
       * git branch -d branchname
          * to delete the branchname branch from repo.
+      * git push origin --delete branchname
+         * to delete the branch on remote repo
+#### Now lets discuss about some techniques how to revert to older versions of code if we do some huan errors.
+   * git checkout filename
+      * to revert back to older version if we accidentally saved the file
+   * git commit --amend -m "change of commited comment Note the git history also changes"
+      * changing the comment of the commit
+   * git commit --amend 
+      * to add extra files as well as we can change the comment instead of commiting it several times
+   * git log --stat
+      * to see advance log options
+   * git cherry-pick hash_number_of_commit
+      * to copy commit from one branch to other if at all we accidentally commited it in some different branch, Note to checkout the branch before you cherry-pick it
+   * git reset --soft old_version_hash_number
+      * to reset the commited changes to staging area, it wont change our saved code and dont remeove files from staging area.
+   * git reset old_version_hash_number
+      * this is a mixed reset and it removes the commit and removes files from staging area but dont change the new code.
+   * git reset --hard old_version_hash_number
+      * this will do hard reset of files and reverts the code as well
+   * git clean -df
+      * to get rid of untracked directories(d) and files(f), untracked means new files we may extracted newly and not present on repo or commit section.
+   * git reflog
+      * show the reference of log of commits with comments serially.
+   * git checkout newhash
+      * if we want to go ahead of new version if we are in older version
+   
