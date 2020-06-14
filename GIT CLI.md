@@ -68,3 +68,5 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
          * now we have merged the branchname with master, perform above code(git branch --merged) again to see what all merged with branch.
       * git push origin master
          * pushes the code merged branch to remote repo.
+      * git branch -d branchname
+         * to delete the branchname branch from repo.
