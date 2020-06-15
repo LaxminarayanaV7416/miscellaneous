@@ -51,11 +51,11 @@ for more details of GIT CLI visit [Link is here](https://git-scm.com/book/en/v2 
          * this function creates the branch of the master now we can work on this branch and we can commit to master later on
       * git checkout branchname
          * to the working from one branch to branchname we can use checkout to checkout that branch
-      * git push -u branchname
+      * git push -u oigin branchname
          * to basically merge the local and remote repo's branch use the above command and it will push it to remote repo later we can use the 
-      * git push branchname
+      * git push origin branchname
          * to push the branchname to remote repo
-      * git pull -u branchname / git pull branchname
+      * git pull origin branchname
          * same as abover explanation
       * git branch -a 
          * to see all sort of branches with proper explanation
