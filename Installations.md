@@ -35,3 +35,8 @@ In your command-line run the following commands:
 
      lucky=# 
      ```
+10. reset th password
+     ```
+     psql -U postgres
+     postgres=# alter user postgres with password 'NEW_PASSWORD';
+     ```
